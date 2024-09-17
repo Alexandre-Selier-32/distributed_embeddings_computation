@@ -1,0 +1,15 @@
+This project performs distributed computing on AWS EMR using Spark.
+
+While Spark makes it possible to do Big Data computing inaccessible on a
+Personal Computer, here I am doing a Proof of Concept with a very small amount
+of data, to keep costs low. But this Spark and AWS setup could easily scale up
+to Big Data levels.
+
+The computing I'm performing here is reduced embeddings for low-res fruit
+images. That could be used for an image classifier.
+
+The data consists of just 121 fruit images, belonging to 2 classes: Banana
+Lady Finger and Apricot.
+
+The complete setup includes an AWS S3 bucket and an EMR cluster comprising at
+least 3 EC2 instances: one for the orchestration, 2 for distributed computing.
